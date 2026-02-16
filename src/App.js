@@ -1,11 +1,14 @@
 
 import './App.css';
-import Option from './Compoents/Option';
+import Projectpage from './Compoents/Projectpage';
+import  MyRouter from './Router/router'; 
+
 function App() {
   return (
     <div className="App">
       <h1>App Js</h1>
-      <Option></Option>
+      <MyRouter></MyRouter>  
+   
     </div>
   );
 }
