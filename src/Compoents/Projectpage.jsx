@@ -9,6 +9,7 @@ const Projectpage = () => {
     <div>
        <div><Link to={"/option"}>Option (checkBox)</Link></div>
        <div><Link to={"/counter"}>Counter With Limit</Link></div>
+       <div><Link to={"/mirror"}>Input Mirror</Link></div>
     </div>
   )
 }

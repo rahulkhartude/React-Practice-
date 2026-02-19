@@ -1,0 +1,93 @@
+
+2️⃣ Input Mirror
+Create an input box
+Whatever user types should display live below it
+If input is empty → show "Please type something"
+
+3️⃣ Toggle Password
+Create password input
+Add "Show/Hide" button
+Clicking button toggles password visibility
+
+
+4️⃣ Checkbox Select All
+Display 4 checkboxes (Apple, Mango, Banana, Orange)
+Button: "Select All"
+When clicked → all checkboxes selected
+Disable button if all selected
+Show selected count & names
+
+
+🔹 Intermediate Level
+5️⃣ Todo App
+Create a Todo App with:
+Add todo
+Delete todo
+Mark as completed
+Show total count
+Show completed count
+Store todos in localStorage
+
+6️⃣ Search Filter
+
+Display list of 10 names
+Add search input
+Filter names as user types
+
+7️⃣ Form Validation
+Create form with:
+Name
+Email
+Password
+Rules:
+Name required
+Email must be valid
+Password minimum 6 characters
+Show error messages
+
+8️⃣ useReducer Counter
+Create counter using useReducer
+Actions:
+increment
+decrement
+reset
+setValue (custom value)
+
+9️⃣ API Fetch
+Fetch users from:
+https://jsonplaceholder.typicode.com/users
+Show loading state
+Show error state
+Display users in card format
+
+🔹 Advanced Level
+🔟 Protected Route
+Create:
+Login page
+Dashboard page
+If user not logged in → redirect to login
+Use:
+React Router
+LocalStorage or Context
+
+1️⃣1️⃣ Pagination
+Fetch 50 posts from API
+Show 5 per page
+Add next & previous buttons
+1️⃣2️⃣ Modal Component
+Create reusable Modal component
+Open/Close modal
+Pass dynamic content as children
+
+1️⃣3️⃣ Custom Hook
+Create custom hook:
+useCounter(initialValue)
+Return:
+count
+increment
+decrement
+reset
+1️⃣4️⃣ Theme Toggle (Context API)
+Create Dark/Light theme
+Use Context API
+Apply theme to whole app
