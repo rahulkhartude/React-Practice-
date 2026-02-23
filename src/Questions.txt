@@ -17,6 +17,11 @@ When clicked → all checkboxes selected
 Disable button if all selected
 Show selected count & names
 
+Simple Like Button
+Create a button "Like"
+Show count
+When clicked → increase count
+If count > 0 → change button text to "Liked ❤️
 
 🔹 Intermediate Level
 5️⃣ Todo App
