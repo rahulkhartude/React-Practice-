@@ -30,7 +30,7 @@ const CountrySelection = () => {
             <h3 key={obj.id}>{obj.question}</h3>
              {
                obj.type=="radio" ? (obj.options.map((op)=>
-              (<input key={op} type='radio' value={op} />)
+              (<input key={op} name='gender' type='radio' value={op} />)
               )):"Not radio"
              }
             </div>
