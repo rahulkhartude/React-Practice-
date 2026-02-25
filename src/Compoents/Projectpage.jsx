@@ -12,7 +12,9 @@ const Projectpage = () => {
        <div><Link to={"/mirror"}>Input Mirror</Link></div>
         <div><Link to={"/showHidePassword"}>Show/Hide Password</Link></div>
         <div><Link to={"/charCounter"}>Character Counter</Link></div>
-        <div><Link to={"/queAns"}>Question and Answer</Link></div>
+        <div><Link to={"/exam"}>Question and Answer</Link></div>
+        <div><Link to={"/exam2"}>Question and Answer 2</Link></div>
+        
     </div>
   )
 }

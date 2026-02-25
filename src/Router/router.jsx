@@ -6,7 +6,8 @@ import Projectpage from '../Compoents/Projectpage';
 import InputMirror from '../Compoents/InputMirror';
 import ToggletPasswordVisibility from '../Compoents/ToggletPasswordVisibility'
 import CharCounter from '../Compoents/CharCounter';
-import QueAns from '../Compoents/QuestionAns'
+import Exam from '../Compoents/Exam'
+import Exam2 from '../Compoents/Exam2'
 const router = () => {
   return (
     <div>
@@ -24,7 +25,8 @@ const router = () => {
                 <Route path="/mirror" element={<InputMirror />} />
                 <Route path='/showHidePassword' element={<ToggletPasswordVisibility/>} />
                 <Route path='/charCounter' element={<CharCounter/>} />
-                 <Route path='/queAns' element={<QueAns/>} />
+                 <Route path='/exam' element={<Exam/>} />
+                 <Route path='/exam2' element={<Exam2/>} />
             </Routes>
       </BrowserRouter>
 
