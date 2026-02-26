@@ -42,7 +42,31 @@ const Exam2 = () => {
   const [userAnswers, setUserAnswers] = useState({});
   const [score, setScore] = useState(null);
    
+  const handleRadio=(queId,selectedOption)=>{
+   setUserAnswers({...userAnswers,[queId]:selectedOption})
+  }
    
+const handleCheckBox=(queId,selectedOption)=>{
+    let currentObj = userAnswers[queId] || [];
+   
+
+
+     
+}
+const handleSubmit=()=>{
+  let total = 0;
+     questions.map((question)=>{
+      let queId = question.id;
+      if(question.answer ==userAnswers[queId])
+         total++;
+     })
+
+
+
+     setScore(total);
+}
+
+
   return (
     <div>
       <h2>Online Exam Test</h2>
@@ -55,7 +79,8 @@ const Exam2 = () => {
                     return (
                         
                     <label>
-                        <input type={q.type} name={q.question+q.id} value={op} checked   />
+                        <input type={q.type} name={q.id} value={op} checked={q.type=='radio'? userAnswers[q.id]==op : userAnswers[q.id]?.includes(op)} onChange={(e)=> {q.type=='radio'? handleRadio(q.id,e.target.value) :handleCheckBox(q.id,e.target.value) }}    />
+                    {op}
                     </label>
                     )
                     })
@@ -64,6 +89,8 @@ const Exam2 = () => {
                </div> 
             })
         }
+        <button onClick={handleSubmit} >Submit</button>
+        {score}
       </div>
   );
 };
